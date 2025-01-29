@@ -1,0 +1,5 @@
+secret:
+  ignored_matches:
+  - match: b894cc116936639508b07bf35d8743fe5fac1015e5cec132390f57022988d72e
+    name: Google API Key - .env:l.0
+version: 2

@@ -1,0 +1,106 @@
+2025-01-28 23:50:42,152 - customGoogleGenerativeAI - INFO - Configured Google Generative AI with API key: AIzaSyAZbCvy-J1wVqzAPoMnUnBkKPll6WFk9aI
+2025-01-28 23:50:42,152 - customGoogleGenerativeAI - INFO - Initialized model: gemini-1.5-flash
+2025-01-28 23:50:42,463 - __main__ - INFO - Initializing workflow graph
+2025-01-28 23:50:42,463 - __main__ - INFO - StateGraph initialized successfully
+2025-01-28 23:50:42,463 - __main__ - DEBUG - Adding nodes to workflow
+2025-01-28 23:50:42,464 - __main__ - INFO - All nodes added successfully
+2025-01-28 23:50:42,464 - __main__ - DEBUG - Adding starting edge
+2025-01-28 23:50:42,464 - __main__ - DEBUG - Starting edge added successfully
+2025-01-28 23:50:42,464 - __main__ - DEBUG - Adding conditional edges for query routing
+2025-01-28 23:50:42,464 - __main__ - DEBUG - Query routing edges added successfully
+2025-01-28 23:50:42,464 - __main__ - DEBUG - Adding conditional edges for interview preparation
+2025-01-28 23:50:42,464 - __main__ - DEBUG - Interview preparation edges added successfully
+2025-01-28 23:50:42,464 - __main__ - DEBUG - Adding conditional edges for learning resources
+2025-01-28 23:50:42,464 - __main__ - DEBUG - Learning resource edges added successfully
+2025-01-28 23:50:42,464 - __main__ - DEBUG - Adding ending edges
+2025-01-28 23:50:42,465 - __main__ - DEBUG - Ending edges added successfully
+2025-01-28 23:50:42,465 - __main__ - DEBUG - Setting workflow entry point
+2025-01-28 23:50:42,465 - __main__ - INFO - Workflow entry point set successfully
+2025-01-28 23:50:42,465 - __main__ - INFO - Compiling workflow
+2025-01-28 23:50:42,466 - __main__ - INFO - Workflow compiled successfully
+2025-01-28 23:50:42,466 - __main__ - INFO - Starting main execution
+2025-01-28 23:50:42,466 - __main__ - DEBUG - Test query: I want to learn Langchain and langgraph.With usage and concept. Also give coding example implementation for both.Create tutorial for this.
+2025-01-28 23:50:42,466 - __main__ - INFO - Processing user query: I want to learn Langchain and langgraph.With usage and concept. Also give coding example implementation for both.Create tutorial for this.
+2025-01-28 23:50:42,471 - customGoogleGenerativeAI - INFO - Starting invoke method
+2025-01-28 23:50:42,471 - customGoogleGenerativeAI - DEBUG - Converted ChatPromptValue to string: Human: Categorize the following customer query into one of these categories:
+1: Learn Generative AI Technology
+2: Resume Making
+3: Interview Preparation
+4: Job Search
+Give the number only as an output.
+
+Examples:
+1. Query: 'What are the basics of generative AI, and how can I start learning it?' -> 1
+2. Query: 'Can you help me improve my resume for a tech position?' -> 2
+3. Query: 'What are some common questions asked in AI interviews?' -> 3
+4. Query: 'Are there any job openings for AI engineers?' -> 4
+
+Now, categorize the following customer query:
+Query: I want to learn Langchain and langgraph.With usage and concept. Also give coding example implementation for both.Create tutorial for this.
+2025-01-28 23:50:42,471 - customGoogleGenerativeAI - INFO - Generating response for prompt: Human: Categorize the following customer query into one of these categories:
+1: Learn Generative AI Technology
+2: Resume Making
+3: Interview Preparation
+4: Job Search
+Give the number only as an output.
+
+Examples:
+1. Query: 'What are the basics of generative AI, and how can I start learning it?' -> 1
+2. Query: 'Can you help me improve my resume for a tech position?' -> 2
+3. Query: 'What are some common questions asked in AI interviews?' -> 3
+4. Query: 'Are there any job openings for AI engineers?' -> 4
+
+Now, categorize the following customer query:
+Query: I want to learn Langchain and langgraph.With usage and concept. Also give coding example implementation for both.Create tutorial for this.
+2025-01-28 23:50:43,736 - customGoogleGenerativeAI - DEBUG - Generated response: 1
+
+2025-01-28 23:50:43,736 - customGoogleGenerativeAI - INFO - Response: 1
+
+2025-01-28 23:50:43,736 - customGoogleGenerativeAI - DEBUG - LLMResult initialized with content: 1
+
+2025-01-28 23:50:43,740 - customGoogleGenerativeAI - INFO - Starting invoke method
+2025-01-28 23:50:43,741 - customGoogleGenerativeAI - DEBUG - Converted ChatPromptValue to string: Human: Categorize the following user query into one of these categories:
+
+Categories:
+- Tutorial: For queries related to creating tutorials, blogs, or documentation on generative AI.
+- Question: For general queries asking about generative AI topics.
+- Default to Question if the query doesn't fit either of these categories.
+
+Examples:
+1. User query: 'How to create a blog on prompt engineering for generative AI?' -> Category: Tutorial
+2. User query: 'Can you provide a step-by-step guide on fine-tuning a generative model?' -> Category: Tutorial
+3. User query: 'Provide me the documentation for Langchain?' -> Category: Tutorial
+4. User query: 'What are the main applications of generative AI?' -> Category: Question
+5. User query: 'Is there any generative AI course available?' -> Category: Question
+
+Now, categorize the following user query:
+The user query is: I want to learn Langchain and langgraph.With usage and concept. Also give coding example implementation for both.Create tutorial for this.
+
+2025-01-28 23:50:43,741 - customGoogleGenerativeAI - INFO - Generating response for prompt: Human: Categorize the following user query into one of these categories:
+
+Categories:
+- Tutorial: For queries related to creating tutorials, blogs, or documentation on generative AI.
+- Question: For general queries asking about generative AI topics.
+- Default to Question if the query doesn't fit either of these categories.
+
+Examples:
+1. User query: 'How to create a blog on prompt engineering for generative AI?' -> Category: Tutorial
+2. User query: 'Can you provide a step-by-step guide on fine-tuning a generative model?' -> Category: Tutorial
+3. User query: 'Provide me the documentation for Langchain?' -> Category: Tutorial
+4. User query: 'What are the main applications of generative AI?' -> Category: Question
+5. User query: 'Is there any generative AI course available?' -> Category: Question
+
+Now, categorize the following user query:
+The user query is: I want to learn Langchain and langgraph.With usage and concept. Also give coding example implementation for both.Create tutorial for this.
+
+2025-01-28 23:50:44,236 - customGoogleGenerativeAI - DEBUG - Generated response: Category: Tutorial
+
+2025-01-28 23:50:44,236 - customGoogleGenerativeAI - INFO - Response: Category: Tutorial
+
+2025-01-28 23:50:44,237 - customGoogleGenerativeAI - DEBUG - LLMResult initialized with content: Category: Tutorial
+
+2025-01-28 23:50:44,239 - customGoogleGenerativeAI - INFO - Configured Google Generative AI with API key: AIzaSyAZbCvy-J1wVqzAPoMnUnBkKPll6WFk9aI
+2025-01-28 23:50:44,239 - customGoogleGenerativeAI - INFO - Initialized model: gemini-1.5-pro
+2025-01-28 23:50:44,275 - customGoogleGenerativeAI - DEBUG - Bound tools to the model: [DuckDuckGoSearchResults(api_wrapper=DuckDuckGoSearchAPIWrapper(region='wt-wt', safesearch='moderate', time='y', max_results=5, backend='auto', source='text'))]
+2025-01-28 23:50:44,278 - __main__ - ERROR - Error processing query: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'NoneType'>
+2025-01-28 23:50:44,278 - __main__ - ERROR - Main execution failed: Expected a Runnable, callable or dict.Instead got an unsupported type: <class 'NoneType'>
