@@ -63,12 +63,12 @@ def tutorial_agent(state: State) -> State:
             ("placeholder", "{chat_history}"),
             ("human", "{input}"),
             ("placeholder", "{agent_scratchpad}"),])
-    #agent_scratchpad is a function that formats the intermediate steps of the agent's actions and observations into a string. 
-    #This function is used to keep track of the agent's thoughts or actions during the execution of the program. But its not necessary, we can do without this so we will not include it only define it.
+    
     learning_agent = LearningResourceAgent(prompt)
-    path = learning_agent.TutorialAgent(state["query"])
-    show_md_file(path)
-    return {"response": path}
+    response = learning_agent.TutorialAgent(state["query"])
+    
+    # Just return the response directly without show_md_file
+    return {"response": response}
 
 def interview_topics_questions(state: State) -> State:
     """Provide a curated list of interview questions related to Generative AI based on user input."""

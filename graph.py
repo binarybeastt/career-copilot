@@ -85,12 +85,13 @@ def run_user_query(query: str) -> Dict[str, str]:
         Dict[str, str]: A dictionary containing the query's category and response
     """
     results = app.invoke({"query": query})
+    # return results
     return {
         "category": results["category"],
         "response": results["response"]
     }
 
-query = "I want to learn Langchain and langgraph.With usage and concept. Also give coding example implementation for both.Create tutorial for this."
-result = run_user_query(query)
-print(result)
+# query = "I want to learn Langchain and langgraph.With usage and concept. Also give coding example implementation for both.Create tutorial for this."
+# result = run_user_query(query)
+# print("Assistant response:", result)
 

@@ -3,7 +3,7 @@ from graph import run_user_query
 
 app = FastAPI()
 
-@app.get("/career-copilot")
+@app.post("/career-copilot")
 async def get_career_copilot(query: str):
     """Get a response from the Career Copilot system based on a user query.
     
